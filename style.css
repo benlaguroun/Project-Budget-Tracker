@@ -31,7 +31,8 @@ h3 {
   margin: auto;
 }
 .heading {
-  margin: 10px auto 40px auto;
+  margin: 30px auto;
+  padding: 0px 20px;
 }
 .heading .title {
   font-size: 30px;
@@ -39,6 +40,7 @@ h3 {
   font-weight: 500;
   text-align: center;
 }
+
 .heading .subtitle {
   font-size: 20px;
   color: #000000;
@@ -86,9 +88,9 @@ h3 {
 }
 
 .stats p {
-  background-color: #2666cf;
-  margin: 20px;
-  padding: 10px 20px;
+  background-color: #bed7ff;
+  margin: 20px 10px;
+  padding: 10px;
   box-shadow: var(--box-shadow);
   font-size: 18px;
   border-radius: 2px;
@@ -144,4 +146,28 @@ h3 {
 
 .records .expense li {
   border-left: 10px solid #df5e5e;
+}
+.records .li p:first-child {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.records span {
+  font-size: 18px;
+}
+
+.records span#time {
+  color: #717171;
+  font-size: 12px;
+}
+
+.records i.delete {
+  margin-left: 15px;
+  color: #082032;
+  cursor: pointer;
+}
+
+.records i.delete:hover {
+  color: #eb596e;
 }
